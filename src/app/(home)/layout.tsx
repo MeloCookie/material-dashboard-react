@@ -11,11 +11,11 @@ import {LayoutConfigProvider} from "@utils/LayoutConfigContext";
 import Footer from "@app/(home)/layouts/Footer";
 import SettingButton from "@app/(home)/layouts/SettingButton";
 
-export default function RootLayout({
+const RootLayout = ({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) => {
   const path = usePathname()
 
   const [visibleMenu, setMenu] =
@@ -71,3 +71,4 @@ export default function RootLayout({
     </Container>
   );
 }
+export default RootLayout

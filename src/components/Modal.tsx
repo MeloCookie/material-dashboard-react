@@ -1,6 +1,6 @@
 'use client'
 import { useRouter } from "next/navigation";
-import {
+import React, {
   useCallback,
   useRef,
 } from "react";
@@ -42,7 +42,10 @@ const Modal = ({
         onMouseUp={(e) => clickedRef.current = e.target}
       >
         {children}
-        <button onClick={handleClickClose}> 닫기 </button>
+        <button
+          onClick={handleClickClose}
+          className="border border-black"
+        > 닫기 </button>
       </div>
     </div>
   );

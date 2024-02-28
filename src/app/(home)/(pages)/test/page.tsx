@@ -1,11 +1,10 @@
 'use client'
-import {Navbar} from "flowbite-react";
-
+import Modal from '@components/Modal'
 const Test = () => {
 
   return (
     <div>
-          <p className=" text-center">hi</p>
+      TEST
     </div>
   )
 }

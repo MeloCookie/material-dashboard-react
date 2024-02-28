@@ -12,9 +12,10 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 const RootLayout = ({
-  children,
+  children, modal
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode;
 }>) => {
 
   const [ui, setUi] = useState<React.ReactNode | null>(null);
@@ -26,6 +27,7 @@ const RootLayout = ({
     <html lang="en" className="bg-[#F5F7F8] ">
       <body className={`${inter.className} w-full h-screen subpixel-antialiased`}>
         {ui}
+        {modal}
       </body>
     </html>
 );

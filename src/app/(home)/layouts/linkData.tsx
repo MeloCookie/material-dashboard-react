@@ -4,9 +4,10 @@ import BackupTableIcon from '@mui/icons-material/BackupTable';
 import ReportIcon from '@mui/icons-material/Report';
 import LoginIcon from '@mui/icons-material/Login';
 import WebStoriesIcon from '@mui/icons-material/WebStories';
+import FindInPageIcon from '@mui/icons-material/FindInPage';
 import {LinkedIconProps} from "@components/LinkedIconList";
 
-export const DashboardItem: LinkedIconProps[] = [
+export const dashboardItem: LinkedIconProps[] = [
   {
     name: 'Dashboard',
     href: '/',
@@ -31,9 +32,15 @@ export const DashboardItem: LinkedIconProps[] = [
     icon: <ReportIcon/>,
     printN:true
   },
+  {
+    name: 'Axios',
+    href: '/axios',
+    icon: <FindInPageIcon/>,
+    printN:true
+  },
 ]
 
-export const AuthPages: LinkedIconProps[] = [
+export const authPage: LinkedIconProps[] = [
   {
     name: 'Log In',
     href: '/login',
